@@ -1,0 +1,110 @@
+/* SETUP */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+/* REUSABLE COMPONENTS */
+#title {
+  font-weight: 400;
+  font-size: 250%;
+  word-spacing: 2px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 180%;
+  text-align: center;
+  margin: 40px auto;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: rgba(182, 23, 55, 0.829);
+  margin: 10px auto 0 auto;
+}
+
+/* HEADER */
+header {
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+header p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#image {
+  margin: 3% auto 0 auto;
+  width: 100%;
+}
+
+#img-caption {
+  margin: 1px auto;
+  text-align: right;
+}
+
+/* BIO */
+#tribute-info p {
+  margin: 0 10% 30px 10%;
+  width: auto;
+  line-height: 1.5em;
+}
+
+/* DISCOGRAPHY */
+.disco-section {
+  background-image: url(img/michael_jackson_wallpaper_2004.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.disco-section ul {
+  margin: 5% auto auto 10%;
+}
+
+.disco-section ul li {
+  line-height: 2em;
+}
+
+/* Awards */
+.awards {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.awards figure {
+  align-self: start;
+}
+
+.img-disc {
+  width: 80%;
+  margin-top: 40px;
+}
+
+.awards div {
+  margin-top: 33px;
+}
+.awards p {
+  margin: 0 10% 30px 10%;
+  line-height: 1.5em;
+}
+
+@media (max-width: 770px) {
+  .awards {
+    grid-template-columns: 1fr;
+  }
+}
