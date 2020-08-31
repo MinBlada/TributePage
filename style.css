@@ -89,6 +89,9 @@ header p {
 .awards figure {
   align-self: start;
 }
+.awards figcaption {
+  margin-right: 15%;
+}
 
 .img-disc {
   width: 80%;
